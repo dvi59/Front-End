@@ -1,0 +1,124 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    width: 50%;
+    margin: 4rem auto;
+    padding: 1rem;
+    color: white;
+    background-color: #141414;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;  
+    box-shadow: 5px 5px rgb(184, 193, 196);
+    border-radius: 5px;
+}
+
+button.hover{
+    background-color: rgb(218, 216, 216);
+}
+
+.title {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    background: lightgray;
+    padding: 5rem;
+    flex-direction: column;
+}
+.search-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.search-input input{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem 10rem;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+    border: solid grey 2px ;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 8%;
+    box-shadow: 5px 5px rgb(184, 193, 196);
+
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.menu-content div{
+    text-align: left;
+    padding-bottom: 0.2rem;
+    border-bottom: solid 2px;
+    margin-top: 0.5rem;
+    transition: background-color 0.6s;
+}
+
+.menu-content div:hover{
+    background-color: rgba(223, 211, 211, 0.589);
+    
+}
+
+.menu:hover .menu-content{
+    display: block;
+}
+
+.icons {
+    color: grey;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem;
+    width: 60%;
+    /* border-bottom: solid;*/
+}
+
+
+.note h4{
+    color: rgb(85, 83, 83);
+    font-weight: lighter;
+
+}
+.note div{
+    color: rgb(85, 83, 83);
+    font-weight: lighter;
+    border-bottom: solid rgb(58, 58, 58) 2px;
+    padding-bottom: 2rem;
+    transition: color 1s;
+}
+
+.note div:hover{
+    color : black;
+}
+
+
+.note label{
+    font-weight: bold;
+    padding: 1rem 0;
+    font-size: 18px;
+}

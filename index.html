@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Front End</title>
+    <!-- Adicione links para folhas de estilo (CSS) aqui, se necessário -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="loadNotes()">
+    <div class="root">
+
+        <div class="header">
+            <div class="menu">
+                <span><i class="fa-solid fa-bars"></i> Menu</span>
+                <div class="menu-content">
+                    <div id="search" onclick="swithComponents(1)">Pesquisar</div>
+                    <div id="add" onclick="swithComponents(2)">Cadastrar</div>
+                </div>
+            </div>
+
+
+            <div class="title">
+                Bloco de Notas
+            </div>
+
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-solid fa-square-envelope"></i>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="search-input">
+                <input type="text" id="inputSearch" />
+            </div>
+            <div class="searchNotes"></div>
+            <div class="addNotes" style="display: none;">
+                <div class="note">
+                    <label for="noteTitle">Título</label>
+                    <input type="text" id="noteTitle" />
+                    <label for="noteInfo">Informações</label>
+                    <textarea id="noteInfo" rows="5"></textarea>
+                    <button onclick="saveNote()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/7c49d922d8.js" crossorigin="anonymous"></script>
+<script defer src="index.js"></script>
+
+</html>
